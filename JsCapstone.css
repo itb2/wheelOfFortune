@@ -1,0 +1,7 @@
+#display{
+	border: 1px solid black;
+}
+.letters{
+	display: inline-block;
+	border: 1px solid black;
+}
