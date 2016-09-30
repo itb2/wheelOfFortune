@@ -4,18 +4,40 @@
 	<title>Wheel of Fortune</title>
 	<link rel="stylesheet" type="text/css" href="JsCapstone.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-	<script type="text/javascript" src="JsCapstone.js"></script>
 
 </head>
 <body>
-	<h1 id="title">Wheel Of Furtune</h1>
+	<h1 id="title">Wheel Of Fortune</h1>
 	<h3 id ="theme">Theme: Beach</h3>
 	<div id="display">
-		<div class = "letters" id = "letter1"></div>
-		<div class = "letters" id = "letter1"></div>
-		<div class = "letters" id = "letter1"></div>
+		<div class = "letters">
+			<span id = "letter0">S</span>
+		</div>
+		<div class = "letters">
+			<span id = "letter1">U</span>
+		</div>
+		<div class = "letters">
+			<span id = "letter2">N</span>
+		</div>
 	</div>
-	
+	<h2 id="options">OPTIONS</h2>
+	<div id="guessDiv">
+		<div id = "guesswrap">
+			<label id= "guessLabel">Guess: </label>
+			<input id= "guess" type="guess" name="guess">
+		</div>
+		<button id="submit">Submit Guess</button>
+	</div>
+	<div id= "wof">
+		<div id = "wheel">
+			<h2 id="spinResult">$000</h2>
+		</div>
+		<button id="spin">Spin The Wheel</button>
+	</div>
+	<div id ="vowels">
+		<button id="buyVowel">Buy A Vowel?</button>
+	</div>
 
+	<script type="text/javascript" src="JsCapstone.js"></script>
 </body>
 </html>

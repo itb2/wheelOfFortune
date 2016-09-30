@@ -1,7 +1,126 @@
-#display{
-	border: 1px solid black;
+body{
+	background-color: ivory;
 }
+#title,
+#theme{
+	text-align: center;
+}
+#title{
+	font-size: 3em;
+	font-family: "Rockwell";
+}
+#display{
+	border: 5px solid black;
+	background-color: black;
+	width: 464px;
+	height: 150px;
+	padding: 0px;
+	margin: 0 auto;
+
+}
+
 .letters{
+	background-color: white;
 	display: inline-block;
 	border: 1px solid black;
+	width: 150px;
+	height: 150px;
+	margin: 0px;
+	text-align: center;
+	vertical-align: top;
 }
+#letter0,
+#letter1,
+#letter2{
+	position: relative;
+	top: 45px;
+	font-size: 4em;
+	display: none;
+}
+#options{
+	font-size: 2em;
+	font-family: "Rockwell";
+	margin-top: 50px;
+	margin-bottom: 0px;
+	text-align: center;
+}
+
+#guessDiv{
+	text-align: center;
+	vertical-align: bottom;
+	position: relative;
+	display: inline-block;
+	border: 4px solid black;
+	margin: 0px;
+	height: 150px;
+	width: 40%;
+}
+#guesswrap{
+	width: 100%;
+	display: block;
+}
+#guessLabel{
+	position: relative;
+	top: 15px;
+	font-family: "Rockwell";
+	font-size: 30px;
+}
+#guess{
+	width: 130px;
+	font-size: 15px;
+	position: relative;
+	top: 15px;
+	height: 25px;
+}
+#submit{
+
+	font-size: 20px;
+	display: inline-block;
+	width: 150px;
+	margin-top: 40px;
+}
+#wof{
+	text-align: center;
+	display: inline-block;
+	border: 4px solid black;
+	margin:0 auto;
+	height: 150px;
+	width: 28%;
+	position: relative;
+	top: 113px;
+}
+#spinResult{
+	font-size: 40px;
+	font-family: "Rockwell";
+
+}
+#spin{
+	font-size: 20px;
+	position: relative;
+	bottom: 20px;
+}
+
+#vowels{
+	text-align: center;
+	display: inline-block;
+	border: 4px solid black;
+	margin:0 auto;
+	height: 150px;
+	width: 25%;
+}
+#buyVowel{
+	font-size: 20px;
+	position: relative;
+	top: 40%;
+}
+
+
+
+
+
+
+
+
+
+
+
