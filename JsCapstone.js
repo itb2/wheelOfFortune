@@ -1,7 +1,8 @@
 
-var word = "ANIMALS ARE COOL";
+var word = prompt("Choose a word or phrase for your friend to guess.");
+word = word.toUpperCase();
 var letters;
-var theme = "animals";
+var theme = prompt("What is the theme of your word or phrase?");
 var allVowels = ["A","E","I","O","U"];
 var userLetters = [];
 var userVowels =[];
@@ -74,7 +75,8 @@ function buyVowel(){
 		var search = searchWord(vowel);
 		if (search== false){
 			alert("That letter is not in our word. Make your Next Move");
-			wrongLetters.push(letter);
+			wrongLetters.push(vowel);
+			$("#wrong").html(String(wrongLetters));
 		}else{
 			var count = search;
 			alert("That letter appears "+count+" times!");
@@ -131,6 +133,7 @@ function wheelSpin(){
 					alert("That letter is not in our word. Make your Next Move");
 					$("#spinResult").html("$000");
 					wrongLetters.push(letter);
+					$("#wrong").html(String(wrongLetters));
 				}else{
 					var count = search;
 					cash += wheelChoice;
