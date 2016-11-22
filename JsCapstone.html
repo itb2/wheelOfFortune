@@ -7,31 +7,42 @@
 
 </head>
 <body>
-	<h1 id="title">Wheel Of Fortune</h1>
-	<h2>Cash Earned: $<span id="cash">0</span></h2>
-	<h2>Incorrect Guesses: <span id="wrong"></span></h2>
-	<h3>Theme: <span id = "theme"></span></h3>
-	<div id="display">
-	 
-	</div>
-	<h2 id="options">OPTIONS</h2>
-	<div id="guessDiv">
-		<div id = "guesswrap">
-			<label id= "guessLabel">Guess: </label>
-			<input id= "guess" type="guess" name="guess">
+	<span onclick="openNav()">Game Stats >></span>
+	<div id="main">
+ 
+		<h1 id="title">Wheel Of Fortune</h1>
+		<div id="mySidenav" class="sidenav">
+		  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+		  <h2>Cash Earned: $<span id="cash">0</span></h2>
+		  <h2>Incorrect Guesses: <span id="wrong"></span></h2>
+		  <button onclick="restartGame()">Restart Game</button>
 		</div>
-		<button id="submit">Submit Guess</button>
-	</div>
-	<div id= "wof">
-		<div id = "wheel">
-			<h2 id="spinResult">$000</h2>
-		</div>
-		<button id="spin">Spin The Wheel</button>
-	</div>
-	<div id ="vowels">
-		<button id="buyVowel">Buy A Vowel</button>
-	</div>
+		
 
-	<script type="text/javascript" src="JsCapstone.js"></script>
+		
+		<h3>Theme: <span id = "theme"></span></h3>
+		<div id="display">
+		 
+		</div>
+		<h2 id="options">OPTIONS</h2>
+		<div id="guessDiv">
+			<div id = "guesswrap">
+				<label id= "guessLabel">Guess: </label>
+				<input id= "guess" type="guess" name="guess">
+			</div>
+			<button id="submit">Submit Guess</button>
+		</div>
+		<div id= "wof">
+			<div id = "wheel">
+				<h2 id="spinResult">$000</h2>
+			</div>
+			<button id="spin">Spin The Wheel</button>
+		</div>
+		<div id ="vowels">
+			<button id="buyVowel">Buy A Vowel</button>
+		</div>
+
+		<script type="text/javascript" src="JsCapstone.js"></script>
+	</div>
 </body>
 </html>
